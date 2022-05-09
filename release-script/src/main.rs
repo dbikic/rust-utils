@@ -26,7 +26,7 @@ error_chain! {
 fn main() -> Result<()> {
     let matches = Command::new("Release script")
         .version(env!("CARGO_PKG_VERSION"))
-        .author("Dino Bikic <dino.bikic@websummit.com>")
+        .author("Dino Bikic <bikic.dino@gmail.com>")
         .arg(
             Arg::new("bump_type")
                 .short('b')
@@ -48,7 +48,7 @@ fn main() -> Result<()> {
     );
     println!();
     println!(
-        "https://github.com/websummit/{}/compare/release-{}?expand=1",
+        "https://github.com/dbikic/{}/compare/release-{}?expand=1",
         get_repo_name()?,
         version,
     );
